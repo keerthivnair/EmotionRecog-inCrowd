@@ -1,0 +1,12 @@
+# Core
+opencv-python
+numpy
+
+
+# Visualization & Utils
+matplotlib
+seaborn
+tensorflow
+deepface
+
+
