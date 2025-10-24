@@ -4,7 +4,7 @@ import cv2
 import os
 
 def main():
-    img_path = os.path.join("data", "crowd.jpg")
+    img_path = os.path.join("data", "faces.jpeg")
     frame = cv2.imread(img_path)
 
     if frame is None:
