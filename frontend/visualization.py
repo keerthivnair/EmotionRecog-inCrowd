@@ -14,7 +14,7 @@ def draw_results(frame, results):
     
     h_factor = frame.shape[0] / 720  
     w_factor = frame.shape[1] / 1280  
-    font_scale = max(0.8, 0.6 * min(h_factor, w_factor))
+    font_scale = max(0.5, 0.2 * min(h_factor, w_factor))
     thickness = max(2, int(2 * min(h_factor, w_factor)))
 
     for res in results:
@@ -28,7 +28,7 @@ def draw_results(frame, results):
         
         text_y = max(y - 10, 20)
         cv2.putText(frame,
-                    f"{emotion} ({score:.2f})",
+                    f"{emotion}",
                     (x, text_y),
                     cv2.FONT_HERSHEY_SIMPLEX,
                     font_scale, (0, 0, 255), thickness)
